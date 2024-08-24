@@ -217,25 +217,28 @@ est ce que age est au dessus ou égal à 18 ? oui = tu es majeur : non tu es min
 # Switch
 Le switch peut etre un remplacement de if si on possède trop de else if dans notre condition
 Exemple :
->let jour = 5;
->
->switch(jour) {
->    case 1:
->        console.log("lundi");
->        break;
->    case 2:
->       console.log("mardi");
->        break;
->    case 3:
->        console.log("mercredi");
->        break;
->   case 4:
->        console.log("jeudi")
->        break;
->    case 5: 
->        console.log("vendredi");
->        break;
->}
+```
+let jour = 5;
+
+switch(jour) {
+    case 1:
+        console.log("lundi");
+        break;
+    case 2:
+       console.log("mardi");
+        break;
+    case 3:
+        console.log("mercredi");
+        break;
+   case 4:
+       console.log("jeudi")
+        break;
+    case 5: 
+        console.log("vendredi");
+        break;
+}```
+
+
 Switch va venir remplacer if et case sera notre remplaçant de else
 on ajoute break à la fin de notre condition pour ne pas chercher à aller dans les autres case si notre condition est déjà valide
 
