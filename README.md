@@ -123,3 +123,7 @@ Le navigateur va lire le calcul de droite à gauche car l'ordre de priorité est
 # Les Convertisseur
 On peut convertir le type de valeur contenu dans une variable en une autre.
 Exemple: un chiffre en texte, un texte en chiffre, un texte en booléen, ect..
+grace aux fonction de javascript : 
+- Number()
+- String()
+- Boolean()
