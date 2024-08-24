@@ -252,6 +252,8 @@ Exemple :
 > - nom.lastIndexOf() (récupère la dernière position d'une lettre dans la chaine de caractère)
 > - nom.trim (va supprimer l'espace dans une chaine de caractère)
 > - npm.repeat(1) (va répéter la chaine en fonction du chiffre qu'on a attribué)
+
+
 Toutes les propriétés : https://www.w3schools.com/js/js_string_methods.asp
 
 # Slice 
