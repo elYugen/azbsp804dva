@@ -205,3 +205,14 @@ Exemple :
 
 
 # Opérateur conditionnel
+L'opérateur conditionnel ?, : est un raccourcis de if else
+Exemple : 
+> let age = 20;
+> age >= 18 ? "tu es majeur" : "tu es mineur"
+on pourrait traduire ce bout de code par :
+est ce que age est au dessus ou égal à 18 ? oui = tu es majeur : non tu es mineur
+
+
+# Switch
+Le switch peut etre un remplacement de if si on possède trop de else if dans notre condition
+Exemple :
