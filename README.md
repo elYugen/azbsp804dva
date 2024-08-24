@@ -127,3 +127,11 @@ grace aux fonction de javascript :
 - Number()
 - String()
 - Boolean()
+
+
+
+
+# Math
+Math est un un objet javascript qui permet de faire des taches mathématique
+Toutes les propriétés : 
+https://www.w3schools.com/jsref/jsref_obj_math.asp
