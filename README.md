@@ -60,6 +60,7 @@ On peut aussi lier la manipulation du Dom à une variable. Exemple d'utilisation
 
 # Les Expressions & opérateurs 
 - "=" = Permet d'affecter une valeur à une variable
+- "==" = Permet de voir si une valeur est égal à une autre
 
 
 ## Opérateurs mathématique de base :
@@ -132,6 +133,63 @@ grace aux fonction de javascript :
 
 
 # Math
-Math est un un objet javascript qui permet de faire des taches mathématique
+Math est un un objet javascript qui permet de faire des taches mathématique.
+Par exemple on peut générer des chiffres aléatoire grace à Math :
+>Math.floor(Math.random() * 6) + 1; 
+ce bout de code va généré un chiffre aléatoire entre 1 et 6 grace à Math.random()
+et va arrondir le chiffre grace à Math.floor pour ne pas avoir une dizaine de chiffre après la virgule
+
 Toutes les propriétés : 
 https://www.w3schools.com/jsref/jsref_obj_math.asp
+
+
+
+
+
+# IF, ELSE
+If (si) permet d'éxécuter du code si une condition est true, else (sinon), faire autre chose si la condition est false
+Exemple : 
+>let age = 13;
+>if (age >=18) {
+>    console.log("tu as plus de 18 ans")
+>} else {
+>    console.log("tu as moins de 18 ans)
+>}
+Je déclare une variable age à qui je donne 13 comme valeur, 
+si age est supérieur ou égal a 18 alors je retourne "tu as plus de 18 ans"
+sinon je retourne "tu as moins de 18 ans"
+
+On peut aussi utiliser des if, else à l'intérieur d'un if, else
+Exemple : 
+>let agePermis = 18;
+>let aSonPermis = true;
+>
+>if(agePermis >=18) {
+>    console.log("tu peux passer le permis !")
+>    if(aSonPermis) {
+>        console.log("tu possèdes le permis !");       
+>    } else {
+>        console.log("va passer ton permis");     
+>    }
+>} else {
+>    console.log("tu ne peux pas passer le permis");  
+>}
+
+On peut aussi d'autre condition avec le else if
+Exemple :
+>if(agePermis >=100) {
+>    console.log("personne ne passe le permis a ton age");
+>} else if(agePermis == 0) {
+>    console.log("tu ne peux pas passer le permis, tu n'es pas encore né")
+>} else if(agePermis < 0) {
+>    console.log("ton age ne peux pas etre en dessous de 0");
+>} else if(agePermis >= 18){
+>    console.log("tu as le droit de conduire !")
+>    if(aSonPermis) {
+>        console.log("tu possèdes le permis !");       
+>    } else {
+>        console.log("va passer ton permis");     
+>    }
+>}  else {
+>    console.log("tu ne peux pas conduire");
+>}
