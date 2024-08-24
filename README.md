@@ -485,6 +485,17 @@ for(let fruit of fruits) {
 
 # forEach
 un forEach est une méthode qui permet de boucler par dessus les éléments d'un array et d'appliquer une fonction callback à chaque élément
+Exemple :
+```
+let nombre = [1, 2, 3, 4, 5] //Je déclare un array
+
+nombre.forEach(affiche); //Mon forEach peut se traduire par: pour chaque nombre, ajoute affiche
+
+function affiche(element) { //Ma fonction pour me permettre de log mon array
+    console.log(element);
+    
+}
+```
 
 
 # Expression de fonction
