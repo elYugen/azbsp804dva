@@ -2,8 +2,8 @@
 Les variables sont des boites qui contiennent une valeur.
 Pour commencer il faut déclarer une variable avec "let" ou "const"
 
->let 
->const est une variable qui restera identique dans le futur
+>- let 
+>- const est une variable qui restera identique dans le futur
 
 Exemple d'utilisation :
 > - let mavariable;
