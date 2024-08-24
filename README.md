@@ -446,3 +446,53 @@ function tchao() {
 
 salut(tchao); // Je passe la fonction tchao en argument à ma fonction salut
 ```
+
+
+# Array 
+Un array est une variable qui contient plus d'une valeur (un tableau)
+Exemple :
+```
+let fruits = ["pomme", "orange", "banane"]
+```
+On peut rajouter des méthode javascript a cet array :
+```
+fruits.push("poire") // Push va ajouter un élément à la fin de notre array
+fruits.pop // Pop va supprimer le dernier élément de notre array
+fruits.unshift("fraise") //Unshift va ajouter un élément au début de notre array
+fruits.shift //Shift va supprimer un élément au tout début de notre array
+fruits.sort() // Va trier le tableau par ordre alphabétique
+fruits.sort().reverse // Va trier le tableau par ordre alphabétique mais inversé (de Z à A)
+```
+## Les boucles
+Les boucles permettent de répéter du code un certain nombre de fois
+on peut utiliser "for" pour boucler dans l'array du dessus et afficher ses éléments
+Exemple:
+```
+for(let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+```
+La boucle va permettre de lire les éléments du tableau à partir de 0 jusqu'a la fin du tableau +1
+(exemple grossier : on commence à l'index 0, la boucle va se dire il y a autre chose derrière et se relancer pour tomber sur l'index 1, et reproduira ça jusqu'a l'index final)
+
+Il y a moyen d'écrire une version "amélioré" de notre boucle :
+```
+for(let fruit of fruits) {
+    console.log(fruit);
+}
+```
+
+
+# forEach
+un forEach est une méthode qui permet de boucler par dessus les éléments d'un array et d'appliquer une fonction callback à chaque élément
+
+
+# Expression de fonction
+Un moyen de définir une fonction en tant que valeur ou variable pour passer sa valeur à une autre variable
+
+
+# Fonction fléché
+
+
+
+
