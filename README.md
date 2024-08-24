@@ -19,20 +19,21 @@ const mavariable;
 
 Une fois notre variable déclarer, il faut lui assigner une valeur numérique,textuel (string) ou un booléen
 Exemple d'utilisation :
-
+```
 let mavariable; 
 
 mavariable = 12345;
 mavariable = "Bonjour";
 mavariable = true;
-
+```
 
 On peut aussi assigner une valeur à notre variable au moment de sa création :
 
+```
 let (OU) const mavariable = 12345;
 let (OU) const mavariable = "Bonjour";
 let (OU) const mavariable = true;
-
+```
 
 
 
@@ -44,12 +45,16 @@ document.querySelector("p") , permet de récupérer un élément HTML ou un él�
 document.querySelectorAll(".test") , permet de récupérer tout les éléments HTML contenant la class .test
 
 textContent , permet d'attributer du texte à notre élément récupérer. Exemple : 
-> document.getElementById("monId").textContent = "Salut" (ceci affichera Salut dans notre élément qui contient l'id monId dans notre HTML)
+```
+ document.getElementById("monId").textContent = "Salut" // (ceci affichera Salut dans notre élément qui contient l'id monId dans notre HTML)
+ ```
 
 On peut aussi lier la manipulation du Dom à une variable. Exemple d'utilisation :
 
-> let mavariable = document.getElementById("monId")
-> mavariable.textContent = "Salut"
+```
+ let mavariable = document.getElementById("monId")
+mavariable.textContent = "Salut"
+```
 
 
 
@@ -73,9 +78,11 @@ On peut aussi lier la manipulation du Dom à une variable. Exemple d'utilisation
 - "%" = Modulo (Divise et donne le reste de la division)
 
 Exemple d'utilisation :
-> let chiffre = 12; *On assigne le nombre 12 à notre variable*
-> chiffre = chiffre + 1 *On ajoute 1 à notre variable*
-> console.log(chiffre) *Va nous retourner 13*
+```
+ let chiffre = 12; *On assigne le nombre 12 à notre variable*
+ chiffre = chiffre + 1 *On ajoute 1 à notre variable*
+ console.log(chiffre) *Va nous retourner 13*
+ ```
 
 
 ## Opérateurs d'affection
@@ -90,10 +97,11 @@ Plutot que de re écrire tout le temps le nom de notre variable avant l'opérate
 - "%=" = Divise et donne le reste de la division
 
 Exemple d'utilisation :
-> let chiffre = 12; *On assigne le nombre 12 à notre variable*
-> chiffre += 1 *On ajoute 1 à notre variable*
-> console.log(chiffre) *Va nous retourner 13*
-
+```
+let chiffre = 12; *On assigne le nombre 12 à notre variable*
+ chiffre += 1 *On ajoute 1 à notre variable*
+ console.log(chiffre) *Va nous retourner 13*
+```
 
 ## Opérateurs d'incrémentation
 On peut augmenter ou diminuer une valeur de notre variable d'une autre façon en utilisant 
@@ -103,9 +111,11 @@ On peut augmenter ou diminuer une valeur de notre variable d'une autre façon en
 - "--" = Diminue de 1 la valeur de notre variable
 
 Exemple d'utilisation :
-> let chiffre = 12; *On assigne le nombre 12 à notre variable*
-> chiffre++; *On ajoute 1 à notre variable*
-> console.log(chiffre) *Va nous retourner 13*
+```
+ let chiffre = 12; *On assigne le nombre 12 à notre variable*
+chiffre++; *On ajoute 1 à notre variable*
+ console.log(chiffre) *Va nous retourner 13*
+ ```
 
 
 ## Priorité des opérateurs mathémathiques :
@@ -136,7 +146,9 @@ grace aux fonction de javascript :
 # Math
 Math est un un objet javascript qui permet de faire des taches mathématique.
 Par exemple on peut générer des chiffres aléatoire grace à Math :
->Math.floor(Math.random() * 6) + 1; 
+```
+Math.floor(Math.random() * 6) + 1;
+ ```
 
 ce bout de code va généré un chiffre aléatoire entre 1 et 6 grace à Math.random()
 et va arrondir le chiffre grace à Math.floor pour ne pas avoir une dizaine de chiffre après la virgule
@@ -151,65 +163,73 @@ https://www.w3schools.com/jsref/jsref_obj_math.asp
 # IF, ELSE
 If (si) permet d'éxécuter du code si une condition est true, else (sinon), faire autre chose si la condition est false
 Exemple : 
->let age = 13;
->if (age >=18) {
->    console.log("tu as plus de 18 ans")
->} else {
->    console.log("tu as moins de 18 ans)
->}
+```
+let age = 13;
+if (age >=18) {
+    console.log("tu as plus de 18 ans")
+} else {
+    console.log("tu as moins de 18 ans)
+}
+```
 Je déclare une variable age à qui je donne 13 comme valeur, 
 si age est supérieur ou égal a 18 alors je retourne "tu as plus de 18 ans"
 sinon je retourne "tu as moins de 18 ans"
 
 On peut aussi utiliser des if, else à l'intérieur d'un if, else
 Exemple : 
->let agePermis = 18;
->let aSonPermis = true;
->
->if(agePermis >=18) {
->    console.log("tu peux passer le permis !")
->    if(aSonPermis) {
->        console.log("tu possèdes le permis !");       
->    } else {
->        console.log("va passer ton permis");     
->    }
->} else {
->    console.log("tu ne peux pas passer le permis");  
->}
+```
+let agePermis = 18;
+let aSonPermis = true;
+
+if(agePermis >=18) {
+    console.log("tu peux passer le permis !")
+    if(aSonPermis) {
+       console.log("tu possèdes le permis !");       
+   } else {
+       console.log("va passer ton permis");     
+    }
+} else {
+    console.log("tu ne peux pas passer le permis");  
+}
+```
 
 On peut aussi d'autre condition avec le else if
 Exemple :
->    if(input >= 100) {
->        console.log("tu es trop vieux pour ça")
->    } else if(input == 0) {
->        console.log("tu ne peux pas avoir 0 ans")
->    } else if(input <= 0) {
->        console.log("tu ne peux pas avoir en dessous de 0 ans")
->    } else if (input >= 18) {
->        console.log("tu peux passer le permis")
->    }
->    else {
->        console.log("tu n'as pas mis ton age")
->    }
-
+```
+    if(input >= 100) {
+        console.log("tu es trop vieux pour ça")
+    } else if(input == 0) {
+        console.log("tu ne peux pas avoir 0 ans")
+    } else if(input <= 0) {
+        console.log("tu ne peux pas avoir en dessous de 0 ans")
+    } else if (input >= 18) {
+        console.log("tu peux passer le permis")
+    }
+    else {
+        console.log("tu n'as pas mis ton age")
+    }
+```
 
 
 # Checked
 .cheked est une propriété qui permet de déterminer si une checkbox ou un bouton radio est coché ou non
 Exemple : 
->    if(variable.checked) {
->        console.log("super !");
->   } else {
->        console.log("tu as oublié de coché la 1ere option !");
->    }
-
+```
+    if(variable.checked) {
+       console.log("super !");
+   } else {
+        console.log("tu as oublié de coché la 1ere option !");
+    }
+```
 
 
 # Opérateur conditionnel
 L'opérateur conditionnel ?, : est un raccourcis de if else
 Exemple : 
-> let age = 20;
-> age >= 18 ? "tu es majeur" : "tu es mineur"
+```
+ let age = 20;
+ age >= 18 ? "tu es majeur" : "tu es mineur"
+ ```
 on pourrait traduire ce bout de code par :
 est ce que age est au dessus ou égal à 18 ? oui = tu es majeur : non tu es mineur
 
@@ -272,8 +292,10 @@ let famille = nom.slice(8, 12)
 # Enchainement de méthode 
 Permet de raccourcir un peu de code
 Exemple en reprenant la String Method :
-> - let nom = "monnom"
-> - nom = nom.trim().toUpperCase().repeat()
+```
+let nom = "monnom"
+nom = nom.trim().toUpperCase().repeat()
+```
 Plutot que d'avoir 30 ligne pour modifier ou récupérer des valeurs, on peut continuer sur une seule et meme ligne
 
 
@@ -285,32 +307,38 @@ Utiliser pour combiner ou manipuler des booléens
 ! = Veut dire NOT (Permet d'inverser un true ou false)
 
 Exemple avec && : 
-> - const temperature = 25
-> - if(temperature > 10 && temperature <= 30) { 
-Ici on va dire que si la température est au dessus de 10 ET(AND) inférieur à 30 alors il fait bon
-> -    console.log("il fait bon")
-> - } else {
-> -     console.log("fait pas bon")
-> - }
+```
+const temperature = 25
+if(temperature > 10 && temperature <= 30) { 
+/// Ici on va dire que si la température est au dessus de 10 ET(AND) inférieur à 30 alors il fait bon
+console.log("il fait bon")
+} else {
+console.log("fait pas bon")
+}
+```
 
 Exemple avec ||
-> - const temperature = 35
-> - if(temperature <= 10 || temperature > 30) { 
-Ici on va dire que si la température est en égal ou dessous de 10 OU(OR) supérieur à 30 alors il fait bon
-> -    console.log("il fait bon")
-> - } else {
-> -     console.log("fait pas bon")
-> - }
+```
+ const temperature = 35
+ if(temperature <= 10 || temperature > 30) { 
+// Ici on va dire que si la température est en égal ou dessous de 10 OU(OR) supérieur à 30 alors il fait bon
+    console.log("il fait bon")
+ } else {
+     console.log("fait pas bon")
+}
+```
 
 Exemple avec !
-> - const soleil = false;
-> - 
-> - if(!soleil){
-> -     console.log("y'a du soleil");
-> -     
-> - } else {
-> -     console.log("pas de soleil");   
-> - }
+```
+ const soleil = false;
+
+ if(!soleil){
+     console.log("y'a du soleil");
+     
+ } else {
+     console.log("pas de soleil");   
+ }
+ ```
 
 
 # Égalité strict
