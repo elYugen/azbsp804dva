@@ -429,3 +429,20 @@ function math(x, y) {
 let cons = math(10, 2)
 console.log(cons)
 ```
+
+
+# Callback
+Un callback est une fonction passé en argument à une autre fonction
+Exemple : 
+```
+function salut(callback) { //Je donne un nom a mon paramètre (ça peut etre n'importe quoi)
+    console.log("Salut");  
+    callback(); //J'appelle mon paramètre dans ma fonction, il aura récupéré l'argument tchao indiqué en dessous
+}
+
+function tchao() {
+    console.log("tchao");
+}
+
+salut(tchao); // Je passe la fonction tchao en argument à ma fonction salut
+```
