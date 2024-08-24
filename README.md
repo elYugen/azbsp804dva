@@ -193,7 +193,7 @@ if(agePermis >=18) {
 }
 ```
 
-On peut aussi d'autre condition avec le else if
+On peut aussi faire d'autre test de condition avec le else if
 Exemple :
 ```
     if(input >= 100) {
