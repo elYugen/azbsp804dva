@@ -236,7 +236,8 @@ switch(jour) {
     case 5: 
         console.log("vendredi");
         break;
-}```
+}
+```
 
 
 Switch va venir remplacer if et case sera notre remplaçant de else
@@ -246,25 +247,27 @@ on ajoute break à la fin de notre condition pour ne pas chercher à aller dans 
 # String method
 Les string method sont des propriété qui permettent de modifier/travailler avec les chaines de caractères
 Exemple :
-> - let nom = "monnom"
-> - nom.length (va récupérer la longueur de la chaine de caractères)
-> - nom.toUpperCase (va mettre la chaine de caractère en majuscule)
-> - nom.toLowerCase (va mettre la chaine de caractère en minuscule)
-> - nom.charAt(1) (va récupérer une lettre dans une chaine de caractère en fonction du chiffre qu'on a attribué)
-> - nom.indexOf() (récupère la position d'une lettre dans la chaine de caractère)
-> - nom.lastIndexOf() (récupère la dernière position d'une lettre dans la chaine de caractère)
-> - nom.trim (va supprimer l'espace dans une chaine de caractère)
-> - npm.repeat(1) (va répéter la chaine en fonction du chiffre qu'on a attribué)
-
-
+```
+let nom = "monnom"
+nom.length (va récupérer la longueur de la chaine de caractères)
+nom.toUpperCase (va mettre la chaine de caractère en majuscule)
+nom.toLowerCase (va mettre la chaine de caractère en minuscule)
+nom.charAt(1) (va récupérer une lettre dans une chaine de caractère en fonction du chiffre qu'on a attribué)
+nom.indexOf() (récupère la position d'une lettre dans la chaine de caractère)
+nom.lastIndexOf() (récupère la dernière position d'une lettre dans la chaine de caractère)
+nom.trim (va supprimer l'espace dans une chaine de caractère)
+npm.repeat(1) (va répéter la chaine en fonction du chiffre qu'on a attribué)
+```
 Toutes les propriétés : https://www.w3schools.com/js/js_string_methods.asp
 
 # Slice 
 Permet de couper une chaine de caractère pour potentiellement la récupérer autre part
 Exemple :
-> - const nom = "Sylvain Durif"
-> - let prenom = nom.slice(0, 7), 0 va etre le point de départ du découpage et va terminer a l'index 7 (le N)
-> - let famille = nom.slice(8, 12)
+```
+const nom = "Sylvain Durif"
+let prenom = nom.slice(0, 7), 0 va etre le point de départ du découpage et va terminer a l'index 7 (le N)
+let famille = nom.slice(8, 12)
+```
 
 # Enchainement de méthode 
 Permet de raccourcir un peu de code
