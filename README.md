@@ -179,18 +179,29 @@ Exemple :
 On peut aussi d'autre condition avec le else if
 Exemple :
 >    if(input >= 100) {
->        acces.textContent = "tu es trop vieux pour ça"
+>        console.log("tu es trop vieux pour ça")
 >    } else if(input == 0) {
->        acces.textContent = "tu ne peux pas avoir 0 ans"
+>        console.log("tu ne peux pas avoir 0 ans")
 >    } else if(input <= 0) {
->        acces.textContent = "tu ne peux pas avoir en dessous de 0 ans"
+>        console.log("tu ne peux pas avoir en dessous de 0 ans")
 >    } else if (input >= 18) {
->        acces.textContent = "tu peux passer le permis"
+>        console.log("tu peux passer le permis")
 >    }
 >    else {
->        acces.textContent = "tu n'as pas mis ton age"
+>        console.log("tu n'as pas mis ton age")
 >    }
 
 
 
 # Checked
+.cheked est une propriété qui permet de déterminer si une checkbox ou un bouton radio est coché ou non
+Exemple : 
+>    if(variable.checked) {
+>        console.log("super !");
+>   } else {
+>        console.log("tu as oublié de coché la 1ere option !");
+>    }
+
+
+
+# Opérateur conditionnel
