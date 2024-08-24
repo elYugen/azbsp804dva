@@ -136,6 +136,7 @@ grace aux fonction de javascript :
 Math est un un objet javascript qui permet de faire des taches mathématique.
 Par exemple on peut générer des chiffres aléatoire grace à Math :
 >Math.floor(Math.random() * 6) + 1; 
+
 ce bout de code va généré un chiffre aléatoire entre 1 et 6 grace à Math.random()
 et va arrondir le chiffre grace à Math.floor pour ne pas avoir une dizaine de chiffre après la virgule
 
@@ -177,19 +178,30 @@ Exemple :
 
 On peut aussi d'autre condition avec le else if
 Exemple :
->if(agePermis >=100) {
->    console.log("personne ne passe le permis a ton age");
->} else if(agePermis == 0) {
->    console.log("tu ne peux pas passer le permis, tu n'es pas encore né")
->} else if(agePermis < 0) {
->    console.log("ton age ne peux pas etre en dessous de 0");
->} else if(agePermis >= 18){
->    console.log("tu as le droit de conduire !")
->    if(aSonPermis) {
->        console.log("tu possèdes le permis !");       
->    } else {
->        console.log("va passer ton permis");     
+>    if(input >= 100) {
+>
+>        acces.textContent = "tu es trop vieux pour ça"
+>
+>    } else if(input == 0) {
+>
+>        acces.textContent = "tu ne peux pas avoir 0 ans"
+>
+>    } else if(input <= 0) {
+>
+>        acces.textContent = "tu ne peux pas avoir en dessous de 0 ans"
+>
+>    } else if (input >= 18) {
+>
+>        acces.textContent = "tu peux passer le permis"
+>
 >    }
->}  else {
->    console.log("tu ne peux pas conduire");
->}
+>
+>    else {
+>
+>        acces.textContent = "tu n'as pas mis ton age"
+>
+>    }
+
+
+
+# Checked
