@@ -492,11 +492,26 @@ let nombre = [1, 2, 3, 4, 5] //Je déclare un array
 nombre.forEach(affiche); //Mon forEach peut se traduire par: pour chaque nombre, ajoute affiche
 
 function affiche(element) { //Ma fonction pour me permettre de log mon array
-    console.log(element);
-    
+    console.log(element);  
 }
 ```
 
+
+# Map
+Prend un callback et l'applique à chaque élément d'un tableau et retourne un tout nouveau tableau
+(très semblable au forEach)
+Exemple :
+```
+const personnes = ["steve", "george", "kevin", "patrick"]
+
+const personne = personnes.map(majuscule)
+console.log(personne);
+
+
+function majuscule(element) {
+    return element.toUpperCase()
+}
+```
 
 # Expression de fonction
 Un moyen de définir une fonction en tant que valeur ou variable pour passer sa valeur à une autre variable
