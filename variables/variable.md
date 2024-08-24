@@ -6,22 +6,22 @@ Pour commencer il faut déclarer une variable avec "let" ou "const"
 >const est une variable qui restera identique dans le futur
 
 Exemple d'utilisation :
-> let mavariable;
-> const mavariable;
+> - let mavariable;
+> - const mavariable;
 
 
 Une fois notre variable déclarer, il faut lui assigner une valeur numérique,textuel (string) ou un booléen
 Exemple d'utilisation :
 
->let mavariable; 
+>- let mavariable; 
 >
->mavariable = 12345;
->mavariable = "Bonjour";
->mavariable = true;
+>- mavariable = 12345;
+>- mavariable = "Bonjour";
+>- mavariable = true;
 
 
 On peut aussi assigner une valeur à notre variable au moment de sa création :
 
->let (OU) const mavariable = 12345;
->let (OU) const mavariable = "Bonjour";
->let (OU) const mavariable = true;
+-let (OU) const mavariable = 12345;
+-let (OU) const mavariable = "Bonjour";
+-let (OU) const mavariable = true;
