@@ -1,5 +1,3 @@
-# azbsp804dva
-
 # Les différents type de console intéressante :
 - console.log() , permet d'afficher un texte ou une variable que l'on déclare dans les (), permet de voir de potentiels bug
 - console.table() , permet d'afficher un tableau ou une variable contenant un tableau que l'on déclare dans les (),
@@ -41,7 +39,7 @@ let (OU) const mavariable = true;
 
 
 # Manipulation du DOM
-document.getElementById("monId") , permet de récupérer un élément HTML contenant un id (ex: div id="monId")
+document.getElementById("monId") , permet de récupérer un élément HTML contenant un id (ex: <div id="monId">)
 document.querySelector("p") , permet de récupérer un élément HTML ou un élément contenant une class CSS
 document.querySelectorAll(".test") , permet de récupérer tout les éléments HTML contenant la class .test
 
@@ -117,3 +115,11 @@ Le navigateur va lire le calcul de droite à gauche car l'ordre de priorité est
 2. Puissance (**)
 3. Multiplication, Division, Modulo
 4. Addition
+
+
+
+
+
+# Les Convertisseur
+On peut convertir le type de valeur contenu dans une variable en une autre.
+Exemple: un chiffre en texte, un texte en chiffre, un texte en booléen, ect..
