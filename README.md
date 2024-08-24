@@ -41,7 +41,7 @@ let (OU) const mavariable = true;
 
 
 # Manipulation du DOM
-document.getElementById("monId") , permet de récupérer un élément HTML contenant un id (ex : <div id="monId">)
+document.getElementById("monId") , permet de récupérer un élément HTML contenant un id (ex: <div id="monId">)
 document.querySelector("p") , permet de récupérer un élément HTML ou un élément contenant une class CSS
 document.querySelectorAll(".test") , permet de récupérer tout les éléments HTML contenant la class .test
 
