@@ -1,5 +1,5 @@
 # Les variables 
-Les variables sont des boites qui contiennent une valeur 
+Les variables sont des boites qui contiennent une valeur.
 Pour commencer il faut déclarer une variable avec "let" ou "const"
 
 - let 
