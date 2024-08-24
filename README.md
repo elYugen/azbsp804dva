@@ -389,3 +389,43 @@ if(Ps5 !== 3.14) {
 }
 // Équivalent du === mais avec l'inégalité
 ```
+
+# Fonction
+Une fonction est un bout de code que l'on déclare une seule fois pour l'utiliser plus tard
+Exemple : 
+```
+function bonneAnniv() { //Je déclare ma fonction et je lui met mon code
+    console.log("Bonne anniv")
+    console.log("Enfin je crois que c'est le tiens")
+    console.log("Si je me trompe pas")
+}
+
+bonneAnniv(); // Me permet d'appeler ma fonction n'importe ou dans mon code
+```
+
+## Argument et paramètres d'une fonction
+Les arguments et les paramètres sont des valeurs que l'on peut ajouter à une fonction au moment de son appel dans le code
+Exemple : 
+```
+
+function bonneAnniv2(prenom, age) { //Je donne des variables a ma fonction qui seront des paramètres
+    console.log("Bonne anniv")
+    console.log(`Ton nom est ${prenom}`)
+    console.log(`Tu as ${age}`)
+}
+
+bonneAnniv2("George", 48) // Les arguments que j'attribue a mes paramètres prenom et age présent dans ma fonction
+```
+
+## Return
+Return va permettre d'afficher par exemple une variable présente dans la fonction
+il faut imaginer que return va devenir le contenu d'une variable (dans mon exemple return resultat, une fois console.log, deviendra 12)
+```
+function math(x, y) {
+    let resultat = x + y;
+    return resultat
+}
+
+let cons = math(10, 2)
+console.log(cons)
+```
