@@ -544,12 +544,35 @@ function carre(element){
 console.log(aucarre);
 ```
 Dans l'exemple, je peux supprimer ma fonction carre et l'introduire directement dans une variable en tant que qu'argument de .map()
+Autre Exemple :
+```
+const bonjour = function() {
+    console.log("salut");
+}
+```
 
 
 # Fonction fléché
+Une fonction fléché est un moyen d'écrire plus facilement une expression de fonction, elles sont bien pour les fonction qui utilise un seul paramètre
 
 Exemple : 
 ```
-```
+const bonjour = () => console.log("salut");
 
+bonjour()
+```
+Dans cette exemple => va venir remplacer le "function() {}"
+A la place on va écrire ("notre parametre") => et ici notre code
+```
+const bonjour = (prenom) => {
+    console.log(`salut ${prenom}`);
+}
+bonjour("steve")
+```
+Autre Exemple :
+```
+const nombre = [1, 2, 3, 4, 5]
+const carre = nombre.map((element) => Math.pow(element, 2))
+console.log(carre);
+```
 
