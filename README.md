@@ -513,12 +513,43 @@ function majuscule(element) {
 }
 ```
 
+
+# Filter
+Un filter crée un nouveau array en filtrant ses éléments
+Exemple :
+```
+let nombres = [1, 2, 3, 4, 5, 6, 7];
+let nomTrier = nombres.filter(isEvent);
+function isEvent(element){
+    return element % 2 === 0;
+}
+```
+
+
+
 # Expression de fonction
 Un moyen de définir une fonction en tant que valeur ou variable pour passer sa valeur à une autre variable
+Exemple : 
+```
+const nombres = [1, 2, 3, 4, 5, 6];
+const aucarre = nombres.map(function(element){
+    return Math.pow(element, 2)
+})
+
+
+function carre(element){
+    return Math.pow(element, 2)
+}
+
+console.log(aucarre);
+```
+Dans l'exemple, je peux supprimer ma fonction carre et l'introduire directement dans une variable en tant que qu'argument de .map()
 
 
 # Fonction fléché
 
-
+Exemple : 
+```
+```
 
 
