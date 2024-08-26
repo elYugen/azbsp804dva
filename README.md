@@ -576,3 +576,9 @@ const carre = nombre.map((element) => Math.pow(element, 2))
 console.log(carre);
 ```
 
+
+# Promesse
+
+# Then & Await
+
+# Fetch
