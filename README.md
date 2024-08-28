@@ -67,7 +67,7 @@ mavariable.textContent = "Salut"
 - "=" = Permet d'affecter une valeur à une variable
 - "==" = Permet de voir si une valeur est égal à une autre
 - "> ou <" = Comparateur plus grand ou plus petit que
-
+- "..." = Destructuration ou fusion d'un objet crée une copie superficielle de l'objet ça signifie que toutes les propriétés de book sont copiées dans un nouvel objet.
 
 ## Opérateurs mathématique de base :
 - "*" = Multiplication
